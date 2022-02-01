@@ -1,0 +1,355 @@
+body {
+    background-color: black;
+    color: gray;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    margin: 0 7em;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+a {
+    text-decoration: none;
+    padding-left: 15px;
+    font-size: 20px;
+    color: gray;
+}
+
+h3 {
+    margin: 0;
+    font-family: 'Prata', serif;
+    color: white;
+    opacity: 0.8;
+}
+
+.btn .button {
+    background: yellow;
+    color: black;
+    padding: 20px 25px;
+}
+
+.top-notes {
+    width: 60%;
+}
+
+p {
+    font-size: 19px;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: 'Prata', serif;
+    color: white;
+    opacity: 0.8;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+    color: def;
+}
+
+.mid-notes {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.mid-notes img {
+    width: 520px;
+}
+
+ h2 {
+    margin-top: 20px;
+    font-family: 'Prata', serif;
+    font-size: 32px;
+    color: white;
+    opacity: 0.8;
+}
+
+.slide {
+    width: 520px;
+    box-sizing: border-box;
+}
+
+.end-notes {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 0;
+    background-color: rgb(54, 52, 52);
+}
+
+.slide1 {
+    width: 520px;
+    box-sizing: border-box;
+}
+
+.final-notes {
+    width: 50%;
+    padding: 50px 0  90px 0;
+}
+
+.final-notes p {
+    margin-bottom: 40px;
+}
+
+footer {
+    display: flex;
+    background-color: rgb(54, 52, 52);
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.icons img {
+    margin-left: 10px;
+}
+
+footer div {
+    margin: 0 7em;
+
+}
+
+.mobile-container {
+    display: none;
+}
+
+@media only screen and (max-width: 780px) {
+    .container {
+        margin: 0 5px;
+    }
+
+    header {
+        display: none;
+    }
+
+    .mobile-container {
+        width: 100%;
+        display: block;
+      }
+    
+      .mobilenav {
+        overflow: hidden;
+        position: relative;
+      }
+
+       h3 {
+            font-size: 16px;
+            padding-top: 10px;
+      }
+    
+      .mobilenav #myLinks {
+        display: none;
+        float: right;
+      }
+    
+      .mobilenav a {
+        color: grey;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+      }
+    
+      .mobilenav a.icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        color: grey;
+        font-size: 30px;
+      }
+    
+      h1 {
+          font-size: 30px;
+      }
+
+      p {
+          font-size: 13px;
+      }
+
+      h2 {
+          font-size: 28px;
+      }
+
+      .top-notes {
+          width: 100%;
+          margin-top: 80px;
+      }
+
+      .logo {
+          flex-wrap: wrap;
+          justify-content: space-around;
+          margin: 50px 10px;
+      }
+
+      .logo img {
+          padding: 10px;
+      }
+
+      .mid-notes {
+          flex-direction: column;
+      }
+
+      .slide {
+          width: 100%;
+          max-width: 100%;
+          margin-bottom: 20px;
+      }
+
+      .slide img {
+          width: 100%;
+          max-width: 100%;
+      }
+
+      .slide1 {
+          width: 100%;
+          max-width: 100%;
+          padding: 5px;
+      }
+
+      .end-notes {
+          flex-direction: column;
+          padding: 30px 10px;
+      }
+
+
+      .final-notes {
+          width: 100%;
+          max-width: 100%;
+      }
+
+      footer div {
+          margin: 0 1.5em;
+      }
+
+      .icons img {
+          padding-top: 8px;
+      }
+
+      
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 780px){
+     .container {
+        margin: 0 40px;
+    }
+
+    header {
+        display: none;
+    }
+
+    .mobile-container {
+        width: 100%;
+        display: block;
+      }
+    
+    .mobilenav {
+        overflow: hidden;
+        position: relative;
+      }
+
+    h3 {
+            font-size: 35px;
+      }
+    
+    .mobilenav #myLinks {
+        display: none;
+        float: right;
+      }
+    
+    .mobilenav a {
+        color: grey;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+      }
+    
+    .mobilenav a.icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        color: grey;
+        font-size: 50px;
+      }
+    
+    h1 {
+          font-size: 58px;
+      }
+
+    p {
+          font-size: 30px;
+      }
+
+    h2 {
+          font-size: 49px;
+      }
+
+    .top-notes {
+          width: 100%;
+          margin-top: 80px;
+      }
+
+    .logo {
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+          margin: 80px auto;
+          max-width: 100%;
+          width: 65%;
+      }
+
+    .logo img {
+          margin: 20px;
+      }
+
+    .mid-notes {
+          flex-direction: column;
+      }
+
+    .slide {
+          width: 100%;
+          max-width: 100%;
+          margin-bottom: 50px;
+      }
+
+    .slide img {
+          width: 100%;
+          max-width: 100%;
+      }
+
+    .slide1 {
+          width: 100%;
+          max-width: 100%;
+      }
+
+    .end-notes {
+          flex-direction: column;
+          padding: 50px;
+      }
+
+
+    .final-notes {
+          width: 100%;
+          max-width: 100%;
+      }
+
+    footer div {
+          margin: 0 1.5em;
+      }
+
+    footer {
+        padding: 20px;
+    }
+    
+    .icons img {
+        padding: 10px;
+      }
+}
