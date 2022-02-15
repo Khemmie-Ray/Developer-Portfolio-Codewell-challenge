@@ -1,355 +1,193 @@
 body {
-    background-color: black;
-    color: gray;
-    font-family: 'Inter', sans-serif;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  color: gray;
+  font-size: 1.2rem;
 }
 
 .container {
-    margin: 0 7em;
+  width: 85%;
+  margin: 0 auto;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 50px 0;
+.cover-img {
+  width: 100%;
 }
 
-a {
-    text-decoration: none;
-    padding-left: 15px;
-    font-size: 20px;
-    color: gray;
-}
+/* ======= Typography ======= */
 
-h3 {
-    margin: 0;
-    font-family: 'Prata', serif;
-    color: white;
-    opacity: 0.8;
-}
-
-.btn .button {
-    background: yellow;
-    color: black;
-    padding: 20px 25px;
-}
-
-.top-notes {
-    width: 60%;
-}
-
-p {
-    font-size: 19px;
+h1,
+h2 {
+  color: rgb(219, 215, 215);
+  font-family: "Prata", serif;
+  font-weight: 300;
 }
 
 h1 {
-    font-size: 50px;
-    font-family: 'Prata', serif;
-    color: white;
-    opacity: 0.8;
+  font-size: 3.6rem;
 }
 
-.logo {
-    display: flex;
-    justify-content: space-between;
-    margin: 50px 0;
-    color: def;
+h2 {
+  font-size: 2.5rem;
 }
 
-.mid-notes {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 50px;
+.article-heading {
+  margin: 0;
 }
 
-.mid-notes img {
-    width: 520px;
+strong {
+  font-weight: 700;
 }
 
- h2 {
-    margin-top: 20px;
-    font-family: 'Prata', serif;
-    font-size: 32px;
-    color: white;
-    opacity: 0.8;
+p {
+  line-height: 1.6em;
 }
 
-.slide {
-    width: 520px;
-    box-sizing: border-box;
+/* ======= Layout ========== */
+
+.bg-color {
+  background: black;
 }
 
-.end-notes {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 50px 0;
-    background-color: rgb(54, 52, 52);
+a {
+  text-decoration: none;
+  color: gray;
 }
 
-.slide1 {
-    width: 520px;
-    box-sizing: border-box;
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+nav li {
+  margin-left: 1em;
 }
 
-.final-notes {
-    width: 50%;
-    padding: 50px 0  90px 0;
+.button {
+  background: yellow;
+  color: black;
+  padding: 20px 25px;
 }
 
-.final-notes p {
-    margin-bottom: 40px;
+header {
+  display: flex;
+  padding: 2em 0;
 }
 
+article,
 footer {
-    display: flex;
-    background-color: rgb(54, 52, 52);
-    justify-content: space-between;
-    padding: 20px 0;
+  background: rgb(39, 45, 49);
 }
 
-.icons img {
-    margin-left: 10px;
+.container-flex {
+  display: flex;
+  flex-direction: column;
 }
 
-footer div {
-    margin: 0 7em;
-
+.container-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
 }
 
 .mobile-container {
+  display: none;
+}
+
+.top-notes {
+  width: 58%;
+  max-width: 800px;
+  margin-bottom: 3em;
+}
+
+.mg-p {
+  margin-bottom: 2em;
+}
+
+.final-notes {
+  padding: 1.5em 0 5em;
+  width: 50%;
+}
+
+.footnote {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  padding: 1em 0;
+}
+
+footer img {
+  margin-left: 0.5em;
+}
+
+/* =======Media queries ===== */
+
+@media (min-width: 780px) {
+  .container-flex {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .slide {
+    width: 47%;
+    padding: 3em 0;
+  }
+}
+
+@media (max-width: 780px) {
+  header {
     display: none;
-}
+  }
 
-@media only screen and (max-width: 780px) {
-    .container {
-        margin: 0 5px;
-    }
+  .mobile-container {
+    width: 100%;
+    display: block;
+    padding: 2em 0;
+  }
 
-    header {
-        display: none;
-    }
+  .mobilenav {
+    overflow: hidden;
+    position: relative;
+  }
 
-    .mobile-container {
-        width: 100%;
-        display: block;
-      }
-    
-      .mobilenav {
-        overflow: hidden;
-        position: relative;
-      }
+  .mobilenav #myLinks {
+    display: none;
+    float: right;
+  }
 
-       h3 {
-            font-size: 16px;
-            padding-top: 10px;
-      }
-    
-      .mobilenav #myLinks {
-        display: none;
-        float: right;
-      }
-    
-      .mobilenav a {
-        color: grey;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-        display: block;
-      }
-    
-      .mobilenav a.icon {
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 0;
-        color: grey;
-        font-size: 30px;
-      }
-    
-      h1 {
-          font-size: 30px;
-      }
+  .mobilenav a {
+    margin-bottom: 1em;
+    display: block;
+  }
 
-      p {
-          font-size: 13px;
-      }
+  .mobilenav a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: grey;
+    font-size: 30px;
+  }
 
-      h2 {
-          font-size: 28px;
-      }
+  .top-notes,
+  .final-notes {
+    width: 100%;
+  }
 
-      .top-notes {
-          width: 100%;
-          margin-top: 80px;
-      }
+  .container-row {
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: center;
+  }
 
-      .logo {
-          flex-wrap: wrap;
-          justify-content: space-around;
-          margin: 50px 10px;
-      }
+  .container-row img {
+    margin: 0.5em;
+  }
 
-      .logo img {
-          padding: 10px;
-      }
-
-      .mid-notes {
-          flex-direction: column;
-      }
-
-      .slide {
-          width: 100%;
-          max-width: 100%;
-          margin-bottom: 20px;
-      }
-
-      .slide img {
-          width: 100%;
-          max-width: 100%;
-      }
-
-      .slide1 {
-          width: 100%;
-          max-width: 100%;
-          padding: 5px;
-      }
-
-      .end-notes {
-          flex-direction: column;
-          padding: 30px 10px;
-      }
-
-
-      .final-notes {
-          width: 100%;
-          max-width: 100%;
-      }
-
-      footer div {
-          margin: 0 1.5em;
-      }
-
-      .icons img {
-          padding-top: 8px;
-      }
-
-      
-}
-
-@media only screen and (max-width: 1024px) and (min-width: 780px){
-     .container {
-        margin: 0 40px;
-    }
-
-    header {
-        display: none;
-    }
-
-    .mobile-container {
-        width: 100%;
-        display: block;
-      }
-    
-    .mobilenav {
-        overflow: hidden;
-        position: relative;
-      }
-
-    h3 {
-            font-size: 35px;
-      }
-    
-    .mobilenav #myLinks {
-        display: none;
-        float: right;
-      }
-    
-    .mobilenav a {
-        color: grey;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-        display: block;
-      }
-    
-    .mobilenav a.icon {
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 0;
-        color: grey;
-        font-size: 50px;
-      }
-    
-    h1 {
-          font-size: 58px;
-      }
-
-    p {
-          font-size: 30px;
-      }
-
-    h2 {
-          font-size: 49px;
-      }
-
-    .top-notes {
-          width: 100%;
-          margin-top: 80px;
-      }
-
-    .logo {
-          flex-wrap: wrap;
-          justify-content: space-evenly;
-          margin: 80px auto;
-          max-width: 100%;
-          width: 65%;
-      }
-
-    .logo img {
-          margin: 20px;
-      }
-
-    .mid-notes {
-          flex-direction: column;
-      }
-
-    .slide {
-          width: 100%;
-          max-width: 100%;
-          margin-bottom: 50px;
-      }
-
-    .slide img {
-          width: 100%;
-          max-width: 100%;
-      }
-
-    .slide1 {
-          width: 100%;
-          max-width: 100%;
-      }
-
-    .end-notes {
-          flex-direction: column;
-          padding: 50px;
-      }
-
-
-    .final-notes {
-          width: 100%;
-          max-width: 100%;
-      }
-
-    footer div {
-          margin: 0 1.5em;
-      }
-
-    footer {
-        padding: 20px;
-    }
-    
-    .icons img {
-        padding: 10px;
-      }
+  .mid-notes,
+  .end-notes {
+    padding: 2em 0;
+  }
 }
