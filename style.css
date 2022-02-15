@@ -31,6 +31,10 @@ h2 {
   font-size: 2.5rem;
 }
 
+.fa-arrow-right-long {
+  vertical-align: middle;
+}
+
 .article-heading {
   margin: 0;
 }
@@ -141,10 +145,18 @@ footer img {
     display: none;
   }
 
+  h1 {
+      font-size: 3rem;
+  }
+
+  h2 {
+      font-size: 2rem;
+  }
+
   .mobile-container {
     width: 100%;
     display: block;
-    padding: 2em 0;
+    padding: 1em 0;
   }
 
   .mobilenav {
@@ -166,7 +178,7 @@ footer img {
     display: block;
     position: absolute;
     right: 0;
-    top: 0;
+    top: .7em;
     color: grey;
     font-size: 30px;
   }
@@ -178,7 +190,7 @@ footer img {
 
   .container-row {
     flex-wrap: wrap;
-    width: 50%;
+    width: 70%;
     justify-content: center;
   }
 
